@@ -6,6 +6,27 @@
   box-sizing: border-box;
 }
 
+.templateOne, .container .addedTasks .task, .container .create form input {
+  font-size: 25px;
+  font-family: "MonteCarlo", cursive;
+  font-family: "Solitreo", cursive;
+  color: #210f4c;
+}
+
+.templateButton, .container .addedTasks .task button, .container .create form .addButton {
+  outline: none;
+  border: 1px solid rgb(143, 144, 149);
+  border-radius: 5px;
+  font-family: "MonteCarlo", cursive;
+  font-family: "Solitreo", cursive;
+  color: #fff;
+  cursor: pointer;
+  background-color: #8052ec;
+}
+.templateButton:hover, .container .addedTasks .task button:hover, .container .create form .addButton:hover {
+  background-color: #210f4c;
+}
+
 body {
   height: 100vh;
   background: linear-gradient(135deg, #916fe1, #d881fb);
@@ -19,4 +40,46 @@ body {
   transform: translate(-50%, -50%);
   top: 50%;
   left: 50%;
+}
+.container .create {
+  background-color: #fff;
+  padding: 30px 15px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.container .create form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.container .create form input {
+  outline: none;
+  border: 1px solid #7d6f9d;
+  border-radius: 5px;
+  padding: 5px;
+  width: 75%;
+}
+.container .create form .addButton {
+  font-size: 25px;
+  padding: 5px 15px;
+}
+.container .addedTasks {
+  background-color: #fff;
+  padding: 30px 15px;
+  margin: 20px;
+  border-radius: 5px;
+}
+.container .addedTasks .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.container .addedTasks .task button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+.container .addedTasks hr {
+  margin-bottom: 15px;
 }/*# sourceMappingURL=style.css.map */
