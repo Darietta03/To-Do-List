@@ -41,7 +41,6 @@ body {
 .container {
     width: 40%;
     min-width: 450px;
-    border: 3px solid white;
     position: absolute;
     transform: translate(-50%, -50%);
     top: 50%;
@@ -80,12 +79,19 @@ body {
         padding: 30px 15px;
         margin: 20px;
         border-radius: 5px;
+
         
         .task {
             @extend .templateOne;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            border-bottom: 1px solid #7d6f9d;
+            margin-bottom: 15px;
+
+            .lineThrought {
+                text-decoration: line-through;
+            }
 
             button {
                 @extend .templateButton;
@@ -98,6 +104,7 @@ body {
 
         hr {
             margin-bottom: 15px;
+            display: block;
         }
     }
 
